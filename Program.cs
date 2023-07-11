@@ -4,7 +4,13 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine();
+            Console.WriteLine("Enter text :");
+            string text = Console.ReadLine();
+            Console.WriteLine("Enter a unacceptable word : ");
+            string old_word = Console.ReadLine();
+            string new_word = "*****";
+            string result = text.Replace(old_word, new_word);
+            Console.WriteLine($"New text : {result}");
         }
     }
 }
